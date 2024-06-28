@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Set the body to use flexbox and align its children in a column */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Ensure the main content area uses flexbox and its children are aligned in a row */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Article should take up 2/3 of the available space */
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Aside should take up 1/3 of the available space */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Ensure the header and footer are styled appropriately */
+header, footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Flexbox specific styles for header navigation */
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0;
+}
+
+/* Styling links in header */
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Article styles */
+article h1, article h2, article h3, article h4 {
+    color: #343a40;
+}
+
+/* Footer specific styles */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
